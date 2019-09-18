@@ -1,0 +1,130 @@
+/*
+CAFAEBLE
+URL: ?
+AUTHOR: Nabil Amer Thabit (nbilz//lab//dsign | @nbilz)
+EMAIL: nbilz@live.com
+CREATE DATE: Jul 1, 2019
+UPDATE DATE: Jul 1, 2019
+REVISION: 1
+NAME: cafaeble.register-1.0.css
+TYPE: Cascading Style Sheet
+DESCRIPTION: ...
+PALLETE:    1. #E9AE10 / rgb(233, 174, 16) (Vivid Orange / Buttercup)
+            2. #2E7587 / rgb(46, 117, 135) (Dark Moderate Cyan / Calypso)
+            3. #0F801C / rgb(15, 128, 28) (Dark Lime Green / Bilbao)
+*/
+
+section.sec-reg,
+section.sec-edit{
+    padding: 20px 20px 60px 20px;
+}
+
+section.sec-edit ul.the-form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+a.profile-pic{
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 3px solid #FFF;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+
+a.profile-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+a.profile-pic .pp-text{
+    text-align: center;
+    position: absolute;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    padding: 30px 0 0 0;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 150px;
+    transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+}
+
+a.profile-pic:hover .pp-text{
+    opacity: 1;
+}
+
+a.profile-pic .pp-text i{
+    display: block;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 2px 0;
+}
+
+.input-pp{
+    display: none;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1600px){}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    ul.the-form{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    ul.the-form{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px){}
+
+@media screen and (max-width: 767px) and (orientation: landscape){
+    ul.the-form{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    section.sec-edit ul.the-form{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+    section.sec-edit ul.the-form{
+        width: 100%;
+    }
+}
+
+/*
+@media screen and (min-width: 1025px) and (max-width: 1600px){}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){}
+
+@media screen and (max-width: 767px){}
+
+@media screen and (max-width: 767px) and (orientation: landscape){}
+
+@media screen and (max-width: 767px) and (orientation: portrait){}
+*/

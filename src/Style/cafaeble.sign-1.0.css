@@ -1,0 +1,139 @@
+/*
+CAFAEBLE
+URL: ?
+AUTHOR: Nabil Amer Thabit (nbilz//lab//dsign | @nbilz)
+EMAIL: nbilz@live.com
+CREATE DATE: Jul 3, 2019
+UPDATE DATE: Jul 3, 2019
+REVISION: 1
+NAME: cafaeble.sign-1.0.css
+TYPE: Cascading Style Sheet
+DESCRIPTION: ...
+PALLETE:    1. #E9AE10 / rgb(233, 174, 16) (Vivid Orange / Buttercup)
+            2. #2E7587 / rgb(46, 117, 135) (Dark Moderate Cyan / Calypso)
+            3. #0F801C / rgb(15, 128, 28) (Dark Lime Green / Bilbao)
+*/
+
+section.sec-sign,
+section.sec-pass{
+    padding: 0 20px;
+    margin: 20px auto 60px auto;
+}
+
+ul.the-form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+a.forgot-pass,
+a.switch{
+    display: block;
+    text-decoration: none;
+    color: #2E7587;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+a.forgot-pass.for-sign{
+    text-align: center;
+}
+
+a.forgot-pass:hover,
+a.switch:hover{
+    color: #0F801C;
+}
+
+a.switch{
+    text-align: right;
+    color: #999;
+    transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+}
+
+a.switch.is-on{
+    color: #2E7587;
+}
+
+a.switch span{
+    position: relative;
+    float: right;
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+    background: #FFF;
+    margin: -8px 0 -10px 10px;
+}
+
+a.switch span:after{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 26px;
+    right: 3px;
+    top: 3px;
+    background: #CCC;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+    transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+}
+
+a.switch.is-on span:after{
+    background: #2E7587;
+    right: 23px;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1600px){}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    ul.the-form{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 767px){}
+
+@media screen and (max-width: 767px) and (orientation: landscape){
+    ul.the-form{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+    ul.the-form{
+        width: 100%;
+    }
+    
+    a.forgot-pass,
+    a.switch{
+        text-align: center;
+    }
+    
+    a.switch span{
+        float: none;
+        display: inline-block;
+    }
+}
+
+/*
+@media screen and (min-width: 1025px) and (max-width: 1600px){}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){}
+
+@media screen and (max-width: 767px){}
+
+@media screen and (max-width: 767px) and (orientation: landscape){}
+
+@media screen and (max-width: 767px) and (orientation: portrait){}
+*/
